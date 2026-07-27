@@ -5,7 +5,44 @@
 	<title>My First Html Page</title>
 </head>
 <body>
-    <h1>Hello World </h1>
+   <header>
+       <nav>
+        <a href="https://www.google.com/">home</a>
+        <a href="Dog1.html">Dog picture</a>
+        <a href="dog_video.html">Dog video</a>
+
+       </nav>
+   </header>
+   <button onclick="myfirstfunction()">
+   click me
+   </button>
+   <p id="irish"></p>
+   <script>
+   function myfirstfunction(){
+       var string = "kiss me , i am irish";
+	   var result = string.fontcolor("green");
+	   document.getElementById("irish").innerHTML=result;
+   
+   }
+   </script>
+    
+	<main>
+    <p ><font color="yellow" face="Verdana" size="7">This is paragraph tesing for font face and font size </font></p>
+	<p><b>this is bold</b><i>this is italic</i><u>this is underline</u></p>
+	<h1 >This is Heading 1</h1>
+	<h3>This is Heading 3</h3>
+	<h6>This is Heading 6</h6>
+	</main>
+	
+	
+	
+	<footer>
+	<p> Copyright @2026</p>
+	
+	
+	</footer>
+	
+	
 </body>
 </html>
 
