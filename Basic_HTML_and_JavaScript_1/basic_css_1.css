@@ -1,0 +1,41 @@
+.p1{
+color:rgb(176,66,245);}	
+#divimage{background-image:url("images/dog.png");
+}
+.box{background-color:lightblue;
+padding:200px;
+border:2px solid;
+}
+h1{color:blue;
+}
+p{color:red;
+}
+/* this is an example for class */
+.my_style{
+	background-color:red;
+	color:blue;
+	text-decoration:underline;
+	font-weight:bold;
+	font-size:small;
+}
+th,td{
+border:1px solid black;
+padding:10px;
+text-align: center;
+
+}
+
+tr ,td {
+background-color:green;
+color:white;
+text-shadow:2px 2px 5px gray;
+
+}
+td:hover{
+background-color:yellow;
+color:black;
+}
+th:hover{
+background-color:yellow;
+color:black;
+}
