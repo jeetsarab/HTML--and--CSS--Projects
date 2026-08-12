@@ -1,0 +1,318 @@
+
+/*Imprted font from google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+
+body{
+   background-color:#eaf6f6;
+   overflow-x:hidden; /*to remove horizontal scroll bar*/
+}
+/*NAV BAR*/
+
+a{font-size:20px;
+    font-family:'Roboto Flex',sans-serif;
+    font-weight:700;
+text-shadow: 1px 2px 5px rgba(46, 31, 31, 0.5);
+text-decoration:none; /*to remove the underline of the link*/
+    
+}
+a:hover{
+    color:white;
+    text-decoration:underline black wavy 2px;
+}
+
+li{
+    display:inline;
+    margin: 10px;
+    padding: 5px;
+}
+.nav-bar{
+    background-color:#216391;
+    padding-top:10px;
+    padding-bottom:10px;
+
+    /*margin - to remove the default margin and padding of the nav bar*/
+    margin-top:-8px;
+    margin-left:-10px;
+    margin-right:-10px;
+    border:1px solid;
+    position:sticky; /*to make the nav bar sticky but we have to give top value */
+    top:0px; /*to make the nav bar sticky but we have to give top value */
+    z-index: 9; /*to make the nav bar stay on top of other elements*/
+}
+#nav-border{
+    border-bottom:3px solid;
+    padding-bottom:10px;color:white;
+   
+}
+h1,h2,h3{
+    font-family:'Roboto Flex',sans-serif;
+    text-align:center;
+    text-shadow: 1px 2px 5px rgba(0, 0, 31, 0.5);
+    color:#216391;
+
+}
+blockquote{
+    font-size:20px;
+    font-family:'Roboto Flex',sans-serif;
+    font-weight:700;
+    text-align:center;
+    color:#216391;
+    
+}
+h1{
+    font-size:50px;
+    margin-top:20px;
+}
+h2{
+    font-size:45px;
+    margin-bottom:20px;
+}
+h3{
+    font-size:30px;
+    margin-bottom:20px;
+}
+#contact-h3{
+   text-shadow: none;
+}
+
+img{
+    width: 600px;
+    height:350px;
+    border-radius:10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 31, 0.5);
+}
+
+/*Animation for text sliding in from left and color change*/
+
+
+
+
+
+@keyframes colortext {
+    from {
+        color: lightblue;
+    }
+    to {
+        color: darkblue;
+    }
+}
+/*Animation for text color change*/
+.animate-text {
+    animation:colortext 7s;
+}
+
+.column {
+    float: left;
+    width: 50%; /*places the image and text side by side when float propert is used*/
+    box-sizing:border-box; /*to include the padding and border in the width of the element*/
+    padding: 10px;
+
+    
+    
+}
+/* Clearfix for the container */
+.container {
+    
+    margin:0px; /*to remove the extra space on the left and right of the container*/;
+    background-size: 100%  !important; /*to make the background image cover the entire container*/
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+/* Clearfix for the container */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 768px) {
+    .column {
+        width: 100%; /*stack the columns on top of each other on small screens*/
+        float: none; /*remove the float property on small screens*/
+    }
+    img{
+        width: 100%; /*make the image responsive on small screens*/
+        height:auto; /*make the image responsive on small screens*/
+    }
+    .container {
+        margin: 0; /*remove the margin= on small screens*/
+    }
+    
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+    margin: 0 auto; /* Center the image container */
+}
+
+#cat{
+    background-color: #f0f8ff; /* Light blue background for cat section */
+}
+#dog{
+    background-color: #f5f5dc; /* Light beige background for dog section */
+}
+
+#rabbit{
+    background-color: #e6ffe6; /* Light green background for rabbit section */
+}
+#fish{
+    background-color: #e0ffff; /* Light cyan background for fish section */
+}
+#guineapig{
+    background-color: #fff0f5; /* Light pink background for guinea pig section */
+}
+#dragon{
+    background-color: #f0fff0; /* Light mint background for dragon section */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+    
+    
+    
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+#video {
+    width: min(90%, 900px);
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #d8eff2;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+#video iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 8px;
+}
+iframe {
+    
+    border-radius: 20px; /* Rounded corners for the video */
+    box-shadow: 1px 2px 5px rgba(0, 0, 31, 0.5); /* Shadow effect for the video */
+    display: table; 
+    margin: 0 auto; /* Center the video */
+    border:none
+}
+footer {
+    background-color: #216391;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.footer-logo {
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 12px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    padding: 10px;
+    text-align: center;
+}
+td p {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+/* form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(90%, 680px);
+    margin: 30px auto 45px;
+    padding: 32px;
+    background-color: #ffffff;
+    border: 1px solid #c7e4e7;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(33, 99, 145, 0.15);
+    box-sizing: border-box;
+}
+
+.contact-page h1 {
+    font-size: clamp(42px, 7vw, 64px);
+}
+
+.contact-page #contact-h3 {
+    max-width: 680px;
+    margin: 15px auto;
+    padding: 0 20px;
+    font-size: clamp(22px, 3vw, 30px);
+    line-height: 1.4;
+}
+
+.contact-page form input:not([type="checkbox"]),
+.contact-page form textarea {
+    width: min(100%, 540px);
+    padding: 14px 16px;
+    margin: 7px 0;
+    border: 2px solid #b9dce1;
+    border-radius: 8px;
+    font: 18px 'Roboto Flex', sans-serif;
+    box-sizing: border-box;
+}
+
+.contact-page form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-page form input:focus,
+.contact-page form textarea:focus {
+    outline: none;
+    border-color: #216391;
+    box-shadow: 0 0 0 3px rgba(33, 99, 145, 0.15);
+}
+
+.contact-page form label {
+    font-size: 18px;
+    color: #216391;
+}
+
+.contact-page form input[type="submit"] {
+    width: 180px;
+    margin-top: 14px;
+    padding: 13px 20px;
+    border: 0;
+    border-radius: 24px;
+    background-color: #216391;
+    color: white;
+    font: 700 18px 'Roboto Flex', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-page form input[type="submit"]:hover {
+    background-color: #17486b;
+    transform: translateY(-2px);
+}

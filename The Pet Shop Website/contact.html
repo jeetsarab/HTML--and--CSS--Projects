@@ -4,10 +4,12 @@
         <title>The Pet Shop</title>
         <meta charset="UTF-8">
         <meta name="description" content="This my pet shop website">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/cat.png">
     </head>
-    <body>
+    <body class="contact-page">
         <!--NAV BAR-->
-        <nav>
+        <nav class="nav-bar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -15,21 +17,22 @@
         </nav>
         <header>
             <div>
-                <h1>Contact us</h1>
+                <h1 class="animate-text">Contact us</h1>
             </div>
         </header>
         <!--Form-->
         <section>
             <div>
-                <h3>Please Provide Your contact Details</h3>
-                <div>
-                <form action="" type="text">
+                <h3 id="contact-h3">Please Provide Your contact information<br>
+                     and a brief message of your inquiry</h3>
+                <div style="text-align: center;">
+                <form action="">
                     <input type="text" placeholder="First name">
-                    <input type="text" placeholder="Latst name"><br>
+                    <input type="text" placeholder="Last name"><br>
                     <input type="email" placeholder="email">
                     <input type="tel" placeholder="Phone number"><br>
                     <input type="checkbox" id="Newsletter">
-                    <label for="Newsletter">would like to recieve emails</label><br>
+                    <label for="Newsletter">I would like to receive emails</label><br>
                     <textarea placeholder="write message here"></textarea><br>
                     <input type="submit" value="submit">
                     
@@ -40,11 +43,12 @@
 
         </section>
         <!--Footer-->
-        <footer>
+        <footer >
+            <img class="footer-logo" src="images/cat.png" alt="Pet Shop logo">
             <table>
                 <tr>
-                    <td>
-                        <p>The pet shop ! &copy;</p>
+                    <td >
+                        <p >The pet shop ! &copy;</p>
                     </td>
                     <td>
                         <p>123 square ave</p>
