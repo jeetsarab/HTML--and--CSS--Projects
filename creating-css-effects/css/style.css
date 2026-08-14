@@ -1,0 +1,188 @@
+/* Navbar */
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index:4; /* To make sure the navbar stays on top of other elements */
+}
+ul {
+    list-style-type: none; /* Remove default list styling */
+    margin: -10px -10px 0px -10px; /* Adjust margin top ,right ,bottom ,left to remove extra space */
+    overflow: hidden; /* Hide overflow */
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: center; /* Center items vertically */
+   
+    background-color: #363636;
+}
+a {
+    display: block; /* Make links fill the entire list item */
+    color: white; /* Set link text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 23px; /* Set font size */
+    font-family:calibri; /* Set font family */
+    font-weight: 600; /* Make text bold */
+    text-transform: uppercase; /* Transform text to uppercase */
+    width: 100px; /* Make links fill the entire width of the list item */
+    padding: 30px; /* Add padding for better spacing */
+    text-align: center; /* Center the text */
+    transition: background-color 0.4s ease-in; /* Smooth transition for hover effect */
+
+}
+/*Navbar rollover effects*/
+a:hover ,.drop:hover {
+    background-color: rgb(228, 159, 00); /* Change background color on hover */
+    color: rgb(49, 49, 49); /* Change text color on hover */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7); /* Add shadow effect on hover */
+    transition:background-color 0.3s ease-in; /* Smooth transition for hover effect */
+
+}
+
+.rollover-menu{
+    
+    display: none; 
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   
+}
+
+.drop:hover .rollover-menu {
+    display: block; /* Show the dropdown menu on hover */
+  
+    
+    
+}
+.rollover-menu a {
+    color: #363636; /* Set text color for dropdown links */
+   /* padding: 12px 16px; /* Add padding for better spacing 
+    text-decoration: none; /* Remove underline from links 
+    display: block; Make links fill the entire width of the dropdown 
+    text-align: left; Align text to the left 
+    transition: background-color 0.3s ease-in;  Smooth transition for hover effect */
+}
+.rollover-menu a:hover {
+    background-color:white; /* Change background color on hover */
+   
+
+}
+.rollover-menu a:hover:nth-child(1) {
+    background-color: rgb(117, 20, 20); /* Change background color on hover for first item */
+   
+}
+.rollover-menu a:hover:nth-child(2) {
+    background-color: rgb(87, 7, 7); /* Change background color on hover for first item */
+   
+}
+.rollover-menu a:hover:nth-child(3) {
+    background-color: rgb(48, 2, 2); /* Change background color on hover for first item */
+   
+}
+.rollover-menu a:hover:nth-child(4) {
+    background-color: rgb(22, 1, 1); /* Change background color on hover for first item */
+   
+}
+footer {
+    background-color: #363636; /* Set background color for footer */
+    color: white; /* Set text color for footer */
+    text-align: center; /* Center the text in the footer */
+    padding: 10px; /* Add padding for better spacing */
+    position: fixed; /* Fix the footer at the bottom of the page */
+    left: 0; /* Align footer to the left */
+    bottom: 0; /* Align footer to the bottom */
+    width: 100%; /* Make footer span the entire width of the page */
+}
+
+.footer-text {
+    font-size: 14px; /* Set font size for footer text */
+    font-family: calibri; /* Set font family for footer text */
+    font-weight: 600; /* Make footer text bold */
+}
+img {
+    width: 700px; 
+    height: 500px; 
+}
+.image-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    height: 100vh; /* Set container height to full viewport height */
+    position: relative; /* Anchor the overlay and pseudo-elements to this image */
+}
+
+.overlay {
+    position: absolute; /* Position overlay absolutely */
+   
+    width: 700px; /* Make overlay span the entire width of the container */
+    height: 500px; /* Make overlay span the entire height of the container */
+    background-color: rgba(90, 90, 90, 0.5); /* Set semi-transparent background color */
+    
+    opacity: 0; /* Initially hide the overlay */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity change */
+}
+
+.image-container:hover .overlay {
+    opacity: 0.6;
+
+}
+/*iamge 2*/
+.zoom-container {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    overflow: hidden; /* Keep the enlarged image inside its frame */
+}
+
+.zoom {
+    display: block;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.zoom-container:hover .zoom {
+    transform: scale(1.15); /* Scale image 2 smoothly on hover */
+}
+
+.zoom-container:hover .overlay {
+    opacity: 0.6; /* Use the same overlay hover effect as the other images */
+}
+
+.circle{
+    position: relative;
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    border-radius: 50%; /* Make the overlay circular */
+    background-color: rgba(90, 90, 90, 0.5); /* Set semi-transparent background color */
+    opacity: 0; /* Initially hide the overlay */
+    
+}
+.circle:hover::before {
+    animation: burst 1s forwards; /* Trigger the burst animation on hover */
+    animation-timing-function: ease-out; /* Smooth animation timing */
+}
+
+@keyframes burst {
+    0% {
+        background-color: rgba(224, 224, 224, 0.2);
+        opacity: 0.2;
+    }
+    100% {
+        width: 300%;
+        height:300%;
+       
+        opacity: .7;
+        background-color: rgba(224, 224, 224, 0.7);
+    }
+}
