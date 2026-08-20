@@ -1,32 +1,56 @@
-# HTML, CSS, and JavaScript Projects
+# Sarbjeet Singh's Portfolio
 
-Projects completed during my web development course.
+This is my personal portfolio website, created as part of my HTML and CSS course. I customized the course portfolio template to introduce myself, display my projects, share my GitHub profile, and provide a contact section.
 
-## The Pet Shop Website
+## About Me
 
-A responsive pet shop website built with HTML and CSS. It includes a home page with pet sections, image hover overlays, a responsive YouTube video, navigation links, a favicon, and a styled contact form.
+I am an aspiring Full Stack Developer who enjoys building clean, responsive, and user-friendly websites. I am continuing to improve my front-end and back-end development skills while learning new web technologies.
 
-### Features
+## Website Features
 
-- Responsive two-column pet image layout
-- Mobile-friendly media queries
-- Image hover overlay effects
-- Responsive embedded pet video
-- Styled contact form with focus and hover states
-- Shared navigation, footer, and favicon
+- Animated and responsive navigation bar
+- Video background with an introduction section
+- About Me section
+- Responsive project cards
+- GitHub profile section
+- Contact form
+- Responsive footer with contact information
+- Hover effects and responsive layouts for different screen sizes
 
-### Run Locally
+## Technologies Used
 
-Open `The Pet Shop Website/index.html` in a browser, or use a local development server such as VS Code Live Server.
+- HTML5
+- CSS3
+- Google Fonts
+- Git and GitHub
 
-### Project Structure
+## Projects
 
-```text
-The Pet Shop Website/
-├── index.html
-├── contact.html
-├── css/
-│   └── style.css
-└── images/
+### Academy Cinema
 
-```
+A responsive cinema website that showcases movies, showtimes, and entertainment content using a clean and user-friendly design.
+
+**Technologies:** HTML, CSS, Bootstrap, and JavaScript
+
+**GitHub:** [View the Academy Cinema project](https://github.com/jeetsarab/HTML--and--CSS--Projects/tree/main/Academy-cinemas)
+
+### Simple Recipes
+
+A responsive recipe website featuring simple recipes in an organized, easy-to-navigate, and visually appealing layout.
+
+**Technologies:** HTML, CSS, Bootstrap, and JavaScript
+
+**GitHub:** [View the Simple Recipes project](https://github.com/jeetsarab/HTML--and--CSS--Projects/tree/main/simple%20recipes)
+
+## Running the Website
+
+Open `index.html` in a web browser. An internet connection is required to load the imported Google Fonts.
+
+## GitHub Profile
+
+You can view my other work and learning progress on my [GitHub profile](https://github.com/jeetsarab).
+
+## Author
+
+Sarbjeet Singh  
+Ottawa, Ontario, Canada
