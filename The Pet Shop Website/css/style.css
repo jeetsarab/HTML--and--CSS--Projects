@@ -39,6 +39,7 @@ li{
     position:sticky; /*to make the nav bar sticky but we have to give top value */
     top:0px; /*to make the nav bar sticky but we have to give top value */
     z-index: 9; /*to make the nav bar stay on top of other elements*/
+    visibility: visible; /*to make the nav bar visible*/
 }
 #nav-border{
     border-bottom:3px solid;

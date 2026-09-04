@@ -21,7 +21,7 @@ html{
 
 body{
     background-image: url(../images/theater-curtains.jpg);
-    background-size: 100% 120%; /* Fill the page width and extend the image slightly vertically. */
+    background-size: 100%; /* Fill the page width and extend the image slightly vertically. */
     background-attachment: fixed;
     overflow-x: hidden; /* Prevent horizontal scrolling. */
 }
