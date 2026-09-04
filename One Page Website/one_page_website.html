@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>My Dream Cars</title>
     <meta name="description" content="My Dream Car website">
+    <link rel="stylesheet" href="CSS/one_page_website.css">
+    <script src="JS/one_page_website.js" defer></script>
 </head>
 
 <body>
@@ -39,11 +41,11 @@
 
         <h2>Car Gallery</h2>
 
-        <img src="images/civic.jpg" alt="Honda Civic" width="300">
+        <img src="images/thumbnails/civic.jpg" data-full="images/civic.jpg" alt="Honda Civic" width="300" tabindex="0" role="button" aria-label="Open Honda Civic in image gallery" aria-haspopup="dialog">
 
-        <img src="images/toyota.jpg" alt="Toyota Supra" width="300">
+        <img src="images/thumbnails/toyota.jpg" data-full="images/toyota.jpg" alt="Toyota Supra" width="300" tabindex="0" role="button" aria-label="Open Toyota Supra in image gallery" aria-haspopup="dialog">
 
-        <img src="images/new.jpg" alt="Nissan GTR" width="300">
+        <img src="images/thumbnails/new.jpg" data-full="images/new.jpg" alt="Nissan GTR" width="300" tabindex="0" role="button" aria-label="Open Nissan GTR in image gallery" aria-haspopup="dialog">
 
     </section>
 
@@ -96,6 +98,16 @@
         <p>&copy; 2026 My Dream Cars Website. All Rights Reserved.</p>
 
     </footer>
+
+    <dialog id="lightbox" class="lightbox" aria-label="Car image gallery">
+        <button class="lightbox-close" type="button" aria-label="Close image gallery" autofocus>&times;</button>
+        <button class="lightbox-previous" type="button" aria-label="Previous image">&#10094;</button>
+        <figure class="lightbox-content">
+            <img id="lightbox-image" alt="">
+            <figcaption id="lightbox-caption" aria-live="polite"></figcaption>
+        </figure>
+        <button class="lightbox-next" type="button" aria-label="Next image">&#10095;</button>
+    </dialog>
 
 </body>
 
