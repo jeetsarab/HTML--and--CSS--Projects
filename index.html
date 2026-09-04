@@ -42,6 +42,35 @@
                 </div>
             </section>
 
+            <section class="slideshow-section" aria-labelledby="slideshow-heading">
+                <div class="section-heading">
+                    <p class="eyebrow">Portfolio highlights</p>
+                    <h2 id="slideshow-heading">Featured work</h2>
+                    <p>Use the arrows or dots to explore highlights from my portfolio.</p>
+                </div>
+                <div class="slideshow" aria-label="Featured portfolio slideshow">
+                    <div class="slide fade">
+                        <img src="images/html_custom.jpg" alt="HTML and CSS code displayed on a screen">
+                        <p class="slide-caption">Building responsive websites with HTML and CSS</p>
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/second.png" alt="Academy Cinemas website preview">
+                        <p class="slide-caption">Academy Cinemas</p>
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/third.png" alt="Simple Recipes website preview">
+                        <p class="slide-caption">Simple Recipes</p>
+                    </div>
+                    <button class="slide-button previous" type="button" aria-label="Show previous slide">&#10094;</button>
+                    <button class="slide-button next" type="button" aria-label="Show next slide">&#10095;</button>
+                </div>
+                <div class="slide-dots" aria-label="Choose a slide">
+                    <button class="slide-dot" type="button" aria-label="Show slide 1"></button>
+                    <button class="slide-dot" type="button" aria-label="Show slide 2"></button>
+                    <button class="slide-dot" type="button" aria-label="Show slide 3"></button>
+                </div>
+            </section>
+
             <section class="projects" id="Projects">
                 <div class="section-heading">
                     <p class="eyebrow">Selected work</p>
@@ -90,22 +119,37 @@
                 </div>
             </section>
 
-            <section class="Row" id="Contact">
-                <div class="Column_2 image-column Column_tall">
-                    <img src="images/contact.jpg" alt="Workspace with a laptop and notebook">
-                </div>
-                <div class="Column_1 content-column Column_tall">
-                    <p class="eyebrow">Get in touch</p>
-                    <h2>Contact</h2>
-                    <form action="" method="POST">
-                        <label for="Name">Name</label>
-                        <input type="text" id="Name" name="Name" placeholder="Please enter your name here">
-                        <label for="Email">Email</label>
-                        <input type="email" id="Email" name="Email" placeholder="Please enter your email here">
-                        <label for="Message">Message</label>
-                        <textarea id="Message" name="Message" placeholder="Please write your message here"></textarea>
-                        <input type="submit" value="Submit">
-                    </form>
+            <section class="contact-invitation" aria-labelledby="contact-invitation-heading">
+                <p class="eyebrow">Get in touch</p>
+                <h2 id="contact-invitation-heading">Let&rsquo;s work together</h2>
+                <p>Have a project or opportunity in mind? I would love to hear from you.</p>
+                <button class="button button-dark open-contact" type="button">Open contact form</button>
+            </section>
+
+            <section class="contact-popup" id="Contact" role="dialog" aria-modal="true" aria-labelledby="contact-heading" hidden>
+                <div class="contact-backdrop"></div>
+                <div class="Row contact-window">
+                    <button class="close-contact" type="button" aria-label="Close contact form">&times;</button>
+                    <div class="Column_2 image-column Column_tall">
+                        <img src="images/contact.jpg" alt="Workspace with a laptop and notebook">
+                    </div>
+                    <div class="Column_1 content-column Column_tall">
+                        <p class="eyebrow">Get in touch</p>
+                        <h2 id="contact-heading">Contact</h2>
+                        <form id="contact-form" novalidate>
+                            <label for="Name">Name</label>
+                            <input type="text" id="Name" name="Name" placeholder="Please enter your name here" aria-describedby="name-error">
+                            <p class="form-error" id="name-error" aria-live="polite"></p>
+                            <label for="Email">Email</label>
+                            <input type="email" id="Email" name="Email" placeholder="Please enter your email here" aria-describedby="email-error">
+                            <p class="form-error" id="email-error" aria-live="polite"></p>
+                            <label for="Message">Message</label>
+                            <textarea id="Message" name="Message" placeholder="Please write your message here" aria-describedby="message-error"></textarea>
+                            <p class="form-error" id="message-error" aria-live="polite"></p>
+                            <input type="submit" value="Submit">
+                            <p class="form-success" id="form-success" role="status"></p>
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>
@@ -128,5 +172,6 @@
                 <p class="footer-copyright">&copy; 2026 Sarbjeet Singh</p>
             </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
